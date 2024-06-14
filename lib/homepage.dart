@@ -18,7 +18,12 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hi Akash'),
+        title: Text('Hi Akash',
+              style: TextStyle(
+                  color: const Color.fromARGB(255, 0, 0, 0),
+                  fontSize: 25,
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.bold),),
         leading: Builder(
             builder: (context) => IconButton(
                   icon: Icon(Icons.menu),
@@ -64,7 +69,7 @@ class _HomepageState extends State<Homepage> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(252, 237, 242, 241),
+                      color: Color.fromARGB(251, 253, 255, 255),
                       borderRadius: BorderRadius.circular(32),
                     ),
                     child: TextField(
